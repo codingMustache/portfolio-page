@@ -8,7 +8,7 @@
 		<h2>GitHub</h2>
 	</a>
 
-	<a href="tel:6031112298">
+	<a href="tel:4422646552">
 		<img src="phone.png" alt="github" />
 		<h2>Phone</h2>
 	</a>
