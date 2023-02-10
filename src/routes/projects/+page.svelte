@@ -1,6 +1,4 @@
-
-
-<div class="project" >
+<div class="project">
 	<div class="head">
 		<h2>Poke Play Pen</h2>
 		<a href="https://github.com/codingMustache/pokemon-play-pen">
@@ -33,7 +31,7 @@
 		</a>
 	</div>
 	<div class="content">
-		<img class="project-pic" src="holedat.png" alt="project" />
+		<img class="project-pic" src="holedat.webp" alt="project" />
 	</div>
 </div>
 <div class="project">

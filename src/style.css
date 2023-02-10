@@ -1,0 +1,65 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+big,
+em,
+img,
+small,
+strong,
+center,
+ol,
+ul,
+li,
+form,
+table,
+caption,
+article,
+aside,
+nav,
+summary,
+video) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body,
+html {
+  background: fixed repeat 1% url('/img-noise-361x370.png');
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Nabla', cursive;
+}
+
+h2 {
+  font-family: 'Baloo 2', cursive;
+}
+
+p {
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.card {
+  max-width: 1000px;
+  background-color: rgba(135, 135, 135, 0.803);
+  padding: 10px;
+  display: flex;
+  width: 90vw;
+  margin: 10px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  outline: 3px solid yellow;
+  box-shadow: inset 0 0 10px 5px black, 0px 10px 20px black;
+}

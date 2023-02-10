@@ -1,5 +1,5 @@
 <div class="card">
-	<img src="pfp.JPG" alt="profile-pic" />
+	<img src="pfp.webp" alt="profile-pic" />
 	<div class="card-text">
 		<h2>Jorge Carvajal</h2>
 		<p>
