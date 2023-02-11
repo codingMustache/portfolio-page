@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 	export let segment;
 	export let test = '';
 	const handleNav = (loc) => {
@@ -9,7 +8,7 @@
 		test = ' ani';
 		setTimeout(() => {
 			test = '';
-		}, 1000);
+		}, 500);
 	};
 
 	onMount(() => (segment = window.location.pathname));
@@ -44,41 +43,37 @@
 </div>
 
 <style>
+	.ani {
+		animation: fade 0.5s ease-in-out 0s 1;
+	}
 	ul {
 		display: flex;
 		list-style-type: none;
-		margin: 5px;
+		justify-content: space-evenly;
+		width: 100%;
 	}
+	li:hover,
 	.on:hover {
-		box-shadow: 0px 0px 3px black, inset -2px -2px rgba(255, 255, 255, 0.2);
+		box-shadow: inset 0px 0px 5px black;
 	}
-	.on {
-		border-radius: 10px;
-		background-color: #4654b2;
-		box-shadow: 0px -1px 3px black, inset -2px -2px rgba(255, 255, 255, 0.2);
+	li,
+	img {
+		border-radius: 100px;
+		background-color: #494949;
+		box-shadow: 0px -1px 3px black, inset -0px -3px 5px rgba(255, 255, 255, 0.44);
 	}
 	.on a {
-		text-shadow: none;
 		color: yellow;
 	}
-	.page {
-		display: flex;
-		margin: auto;
-		flex-wrap: wrap;
-		justify-content: center;
-		padding-top: 80px;
-		padding-bottom: 100px;
-	}
+
 	img {
 		display: flex;
 		position: fixed;
-		width: 50px;
+		width: 60px;
 		left: 10px;
 		top: 10px;
-		padding: 3px;
-		border-radius: 10px;
-		background-color: #4654b2;
-		box-shadow: 0px -1px 3px black, inset -2px -2px rgba(255, 255, 255, 0.2);
+		padding: 5px;
+		background-color: #494949;
 	}
 
 	.header {
@@ -87,181 +82,87 @@
 	.navbar {
 		width: 100%;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 	}
 	nav {
 		position: fixed;
-		gap: 1rem;
-		padding: 5px 50px;
-		justify-content: space-evenly;
-		align-items: center;
-		height: 50px;
 		display: flex;
-		background: #4e5ec9dd;
-		border: 4px solid yellow;
-		outline: 4px solid rgb(144, 144, 2);
+		width: 70%;
+		align-items: center;
+		height: 75px;
+		background: #6767676f;
 		border-top: none;
-		border-radius: 0 0 100px 100px;
-		box-shadow: inset 0px -3px 5px rgba(255, 255, 255, 0.2), 0px -3px 10px 5px black;
+		backdrop-filter: blur(5px);
+		border-radius: 0 0 0px 60px;
+		box-shadow: inset 0px -3px 5px rgba(255, 255, 255, 0.642), 0px -3px 10px 5px black;
 	}
 	a {
 		text-shadow: 1px 1px 3px black;
-		margin: 5px;
 		text-decoration: none;
 		color: #ffffff;
-		font-weight: bold;
-		font-family: 'Baloo 2', cursive;
-		font-size: large;
+		font-family: Julius, cursive;
+		font-size: calc(15px + 0.390625vw);
 	}
+
 	.name {
 		display: none;
 	}
 
-	@keyframes wiggle {
-		0% {
-			transform: rotate(10deg);
-		}
-		25% {
-			transform: rotate(-13deg);
-		}
-		50% {
-			transform: rotate(15deg);
-		}
-		75% {
-			transform: rotate(-11deg);
-		}
-		100% {
-			transform: rotate(12deg);
-		}
-	}
-	@-o-keyframes wiggle {
-		0% {
-			transform: rotate(0deg);
-		}
-		25% {
-			transform: rotate(-3deg);
-		}
-		50% {
-			transform: rotate(5deg);
-		}
-		75% {
-			transform: rotate(-1deg);
-		}
-		100% {
-			transform: rotate(2deg);
-		}
-	}
-	@-moz-keyframes wiggle {
-		0% {
-			transform: rotate(0deg);
-		}
-		25% {
-			transform: rotate(-3deg);
-		}
-		50% {
-			transform: rotate(5deg);
-		}
-		75% {
-			transform: rotate(-1deg);
-		}
-		100% {
-			transform: rotate(2deg);
-		}
-	}
-	@-webkit-keyframes wiggle {
-		0% {
-			transform: rotate(0deg);
-		}
-		25% {
-			transform: rotate(-3deg);
-		}
-		50% {
-			transform: rotate(5deg);
-		}
-		75% {
-			transform: rotate(-1deg);
-		}
-		100% {
-			transform: rotate(2deg);
-		}
-	}
-	@keyframes fade {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	@-o-keyframes fade {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	@-moz-keyframes fade {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	@-webkit-keyframes fade {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	.ani {
-		-webkit-animation: fade 1s 1;
-		-moz-animation: fade 1s 1;
-		-o-animation: fade 1s 1;
-		animation: fade 0.7s 1;
+	li {
+		padding: 8px;
 	}
 
 	img:hover {
-		animation: wiggle 0.5s infinite;
+		animation: wiggle 0.4s 1;
 	}
 
 	@media (max-width: 600px) {
+		li,
+		.on,
+		img {
+			border-radius: 100px;
+			background-color: #494949;
+			box-shadow: 0px 1px 3px black, inset 0px 3px 5px rgba(255, 255, 255, 0.44);
+		}
 		.page {
 			padding-top: 70px;
+		}
+		img {
+			top: 10px;
+			width: 50px;
 		}
 		.name {
 			display: flex;
 			position: fixed;
-			top: 12px;
-			margin: 0 0px 0px 75px;
-			font-size: large;
-			padding: 3px 10px;
-			border-radius: 10px;
-			background-color: #4654b2;
-			box-shadow: 0px -1px 3px black, inset -2px -2px rgba(255, 255, 255, 0.2);
-			line-break: strict;
+			top: 15px;
+			width: fit-content;
+			margin: 0px 0px 0px 75px;
+			font-size: calc(15px + 0.390625vw);
+			padding: 7px 10px;
+			border-radius: 100px;
+			color: white;
+			background-color: #4b4b4c;
+			box-shadow: 0px 1px 3px black, inset 0px 3px 5px rgba(255, 255, 255, 0.44);
 		}
 		.top-left {
 			display: flex;
 			position: relative;
 			border-radius: 10px;
 		}
+		.navbar {
+			justify-content: center;
+		}
 		nav {
-			box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.2), 0px 3px 10px black;
+			box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.64), 0px 3px 10px black;
 			bottom: 0px;
-			width: 90%;
-			border-radius: 100px 100px 0px 0px;
-			padding: 10px;
+			width: 100%;
+			border-radius: 0px;
+			padding: 15px;
 			height: 20px;
-			border: 4px solid yellow;
-			outline: 4px solid rgb(144, 144, 2);
 			border-bottom: none;
 		}
-		a {
-			font-size: medium;
+		li {
+			padding: 3px 5px;
 		}
 	}
 </style>

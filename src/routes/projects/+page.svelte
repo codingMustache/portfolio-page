@@ -6,7 +6,7 @@
 		</a>
 	</div>
 	<div class="content">
-		<img scr="pfp.JPG" alt="project" />
+		<img class="project-pic" src="portfolio/pokepp.webp" alt="project" />
 	</div>
 </div>
 <div class="project">
@@ -17,7 +17,8 @@
 		</a>
 	</div>
 	<div class="content">
-		<img scr="pfp.JPG" alt="project" />
+		<img class="project-pic" src="./portfolio/newhome.webp" alt="project" />
+		<p>test</p>
 	</div>
 </div>
 <div class="project">
@@ -31,28 +32,27 @@
 		</a>
 	</div>
 	<div class="content">
-		<img class="project-pic" src="holedat.webp" alt="project" />
+		<img class="project-pic" src="portfolio/holedat.webp" alt="project" />
 	</div>
 </div>
 <div class="project">
 	<div class="head">
 		<h2>Portfolio Page</h2>
-		<img class="github-logo" src="github-mark.png" alt="github-logo" />
-		<img class="github-logo" src="website-icon.png" alt="github-logo" />
 	</div>
-	<div class="content">
-		<img scr="pfp.JPG" alt="project" />
-	</div>
+	<div class="content" />
 </div>
 
 <style>
+	h2 {
+		font-family: Pont;
+		font-size: larger;
+	}
 	.project {
 		background-color: rgba(135, 135, 135, 0.803);
 		margin: 5px;
 		padding: 20px;
 		border-radius: 10px;
-		border: 2px solid yellow;
-		box-shadow: inset 0 0 10px 3px black;
+		box-shadow: inset 3px -3px 5px rgb(255, 255, 255), 2px -3px 5px black;
 		min-width: 200px;
 	}
 	.github-logo {
@@ -60,10 +60,19 @@
 	}
 	.head {
 		display: flex;
+		background-color: #494949;
+		color: white;
+		border-radius: 5px;
 		justify-content: space-evenly;
 		align-items: center;
+		box-shadow: 0px -1px 3px black, inset 0px -3px 5px rgb(255 255 255 / 44%);
 	}
 	.project-pic {
+		object-fit: cover;
 		width: 200px;
+		height: 200px;
+		margin: 5px;
+		border-radius: 10px;
+		border: 1px solid white;
 	}
 </style>
