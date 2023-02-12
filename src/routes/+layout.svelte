@@ -156,6 +156,7 @@
 		nav {
 			box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.64), 0px 3px 10px black;
 			bottom: 0px;
+			top: 95%;
 			width: 100%;
 			border-radius: 0px;
 			padding: 15px;
