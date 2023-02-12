@@ -127,7 +127,7 @@
 	.footer {
 		height: 100px;
 	}
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		.project {
 			min-width: 90%;
 		}

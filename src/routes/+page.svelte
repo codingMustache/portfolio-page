@@ -1,7 +1,5 @@
 <div class="card">
-	<div class="circle-top" />
 	<img src="pfp-transp.webp" alt="profile-pic" />
-	<div class="circle-bottom" />
 	<div class="card-text">
 		<h2>Jorge Carvajal</h2>
 		<p>
@@ -26,6 +24,7 @@
 		width: 90vw;
 		height: 70%;
 		padding: 20px;
+		padding-bottom: 100px;
 		background-color: #676767;
 		border-radius: 5px;
 		box-shadow: inset 0 0 10px rgb(255, 255, 255), 0px 10px 20px black;
@@ -45,10 +44,39 @@
 	}
 
 	img {
-		object-fit: cover;
+		/* object-fit: cover;
 		width: 50%;
 		height: 100%;
-		border-radius: 0 0 150px 150px;
+		border-radius: 0 0 150px 150px; */
+		--s: 500px; /* image size */
+		--b: 5px; /* border thickness */
+		--c: #3f3f3f; /* border color */
+		--f: 1; /* initial scale */
+
+		width: var(--s);
+		aspect-ratio: 1;
+		padding-top: calc(var(--s) / 5);
+		cursor: pointer;
+		border-radius: 0 0 999px 999px;
+		--_g: 50% / calc(100% / var(--f)) 100% no-repeat content-box;
+		--_o: calc((1 / var(--f) - 1) * var(--s) / 2 - var(--b));
+		outline: var(--b) solid var(--c);
+		outline-offset: var(--_o);
+		background: radial-gradient(
+				circle closest-side,
+				#ecd17800 calc(99% - var(--b)),
+				var(--c) calc(100% - var(--b)) 99%,
+				#0000
+			)
+			var(--_g);
+		-webkit-mask: linear-gradient(#000 0 0) no-repeat 50% calc(1px - var(--_o)) /
+				calc(100% / var(--f) - 2 * var(--b) - 2px) 50%,
+			radial-gradient(circle closest-side, #000 99%, #0000) var(--_g);
+		transform: scale(var(--f));
+		transition: 0.5s;
+	}
+	img:hover {
+		--f: 1.35; /* hover scale */
 	}
 
 	p {
@@ -70,7 +98,7 @@
 		background-color: #494949;
 		box-shadow: 0px -1px 3px black, inset -2px -2px rgba(255, 255, 255, 0.2);
 	}
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		.card {
 			flex-direction: column;
 			align-items: center;
@@ -78,7 +106,12 @@
 		}
 		img {
 			width: 90%;
+			z-index: 0;
 		}
+		.card-text {
+			margin-top: 20px;
+		}
+
 		.card {
 			margin-top: 0;
 		}

@@ -83,6 +83,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
+		z-index: 4;
 	}
 	nav {
 		position: fixed;
@@ -96,6 +97,7 @@
 		backdrop-filter: blur(5px);
 		border-radius: 0 0 0px 60px;
 		box-shadow: inset 0px -3px 5px rgba(255, 255, 255, 0.642), 0px -3px 10px 5px black;
+		z-index: 4;
 	}
 	a {
 		text-shadow: 1px 1px 3px black;
@@ -117,7 +119,7 @@
 		animation: wiggle 0.4s 1;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		li,
 		.on,
 		img {
@@ -127,6 +129,7 @@
 		}
 		.page {
 			padding-top: 70px;
+			overflow-y: hidden;
 		}
 		img {
 			top: 10px;
@@ -156,7 +159,7 @@
 		nav {
 			box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.64), 0px 3px 10px black;
 			bottom: 0px;
-			top: 95%;
+			top: 93vh;
 			width: 100%;
 			border-radius: 0px;
 			padding: 15px;

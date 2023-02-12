@@ -76,7 +76,7 @@
 		height: 100px;
 		width: 100%;
 	}
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		.card {
 			width: 90%;
 		}
