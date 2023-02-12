@@ -11,7 +11,9 @@
 			working on civic hacking projects and staying up-to-date on the latest developments in the
 			world of web technology.
 		</p>
-		<button href="">View Resume</button>
+		<a href="/portfolio/resume.pdf" target="_blank" rel="noopener noreferrer">
+			<button>View Resume</button>
+		</a>
 	</div>
 </div>
 
