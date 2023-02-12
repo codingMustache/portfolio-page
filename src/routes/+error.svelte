@@ -9,7 +9,21 @@
 </script>
 
 <center>
-	<h1>You Found Yourself on the</h1>
-	<h1>Wrong Side of the</h1>
-	<h1>Web</h1>
+	<div class="card">
+		<h1>You Found Yourself on the</h1>
+		<h1>Wrong Side of the</h1>
+		<h1>Web</h1>
+	</div>
 </center>
+
+<style>
+	.card {
+		margin: auto;
+	}
+	h1 {
+		color: white;
+		text-shadow: 1px 1px black;
+		font-size: 10vw;
+		font-style: Julius;
+	}
+</style>

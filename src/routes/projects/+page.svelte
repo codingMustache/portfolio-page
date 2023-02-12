@@ -78,9 +78,10 @@
 	h2 {
 		font-family: Pont;
 		font-size: larger;
+		text-shadow: 1px 1px 1px black;
 	}
 	.project {
-		background-color: rgba(135, 135, 135, 0.803);
+		background-color: rgba(105, 105, 105, 0.803);
 		margin: 5px;
 		padding: 20px;
 		border-radius: 5px;
@@ -89,13 +90,15 @@
 		max-width: 500px;
 	}
 	ul {
-		list-style: disc;
+		list-style: circle;
+		text-shadow: 1px 1px 1px black;
 		padding: 20px;
+		color: white;
+		font-family: Pont;
 	}
-	.github-logo {
-		height: 20px;
-	}
+
 	.head {
+		padding: 5px;
 		display: flex;
 		background-color: #494949;
 		color: white;
@@ -104,6 +107,14 @@
 		align-items: center;
 		box-shadow: 0px -1px 3px black, inset 0px -3px 5px rgb(255 255 255 / 44%);
 	}
+	.head img {
+		background-color: rgba(164, 162, 162, 0.803);
+		padding: 3px;
+		border-radius: 100px;
+		box-shadow: inset 1px -1px 2px white, 1px -1px 3px black;
+		cursor: pointer;
+		width: 30px;
+	}
 	.project-pic {
 		object-fit: cover;
 		width: 100%;
@@ -111,6 +122,7 @@
 		margin: 5px;
 		border-radius: 10px;
 		border: 1px solid white;
+		box-shadow: 5px 5px 5px black;
 	}
 	.footer {
 		height: 100px;

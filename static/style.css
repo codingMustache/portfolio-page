@@ -1,16 +1,16 @@
 @font-face {
   font-family: Julius;
-  src: url(./JuliusSansOne-Regular.ttf);
+  src: url(./JuliusSansOne-Regular.ttf), local(Times);
 }
 
 @font-face {
   font-family: Pont;
-  src: url(./PontanoSans-Regular.ttf);
+  src: url(./PontanoSans-Regular.ttf), local(Times);
 }
 
 @font-face {
   font-family: Comfy;
-  src: url(./Comfortaa-VariableFont_wght.ttf);
+  src: url(./Comfortaa-VariableFont_wght.ttf), local(Times);
 }
 
 html,
