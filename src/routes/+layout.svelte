@@ -78,19 +78,18 @@
 
 	.header {
 		position: relative;
+		z-index: 4;
 	}
 	.navbar {
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
-		z-index: 4;
 	}
 	nav {
 		position: fixed;
 		display: flex;
 		width: 70%;
 		align-items: center;
-		top: 0px;
 		height: 75px;
 		background: #6767676f;
 		border-top: none;
@@ -128,7 +127,7 @@
 			box-shadow: 0px 1px 3px black, inset 0px 3px 5px rgba(255, 255, 255, 0.44);
 		}
 		.page {
-			padding-top: 70px;
+			padding: 0px 0px 100px 0px;
 			overflow-y: hidden;
 		}
 		img {
@@ -159,12 +158,10 @@
 		nav {
 			box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.64), 0px 3px 10px black;
 			bottom: 0px;
-			top: 93vh;
 			width: 100%;
 			border-radius: 0px;
 			padding: 15px;
 			height: 20px;
-			border-bottom: none;
 		}
 		li {
 			padding: 3px 5px;
