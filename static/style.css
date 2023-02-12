@@ -56,7 +56,8 @@ body,
 body {
   background: url('/noise-texture.png');
   background-repeat: repeat;
-  background-color: rgba(1, 9, 30, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+  ;
 }
 
 .page {

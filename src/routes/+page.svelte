@@ -49,7 +49,7 @@
 		height: 100%;
 		border-radius: 0 0 150px 150px; */
 		--s: 500px; /* image size */
-		--b: 5px; /* border thickness */
+		--b: 0px; /* border thickness */
 		--c: #3f3f3f; /* border color */
 		--f: 1; /* initial scale */
 
@@ -64,9 +64,9 @@
 		outline-offset: var(--_o);
 		background: radial-gradient(
 				circle closest-side,
-				#ecd17800 calc(99% - var(--b)),
+				#3f3f3f calc(99% - var(--b)),
 				var(--c) calc(100% - var(--b)) 99%,
-				#0000
+				#00000000
 			)
 			var(--_g);
 		-webkit-mask: linear-gradient(#000 0 0) no-repeat 50% calc(1px - var(--_o)) /
