@@ -1,21 +1,21 @@
 <div class="card">
 	<a href="https://github.com/codingMustache">
-		<img src="github.png" alt="github" />
+		<img src="github.png" alt="github" width="70px" />
 		<h2>GitHub</h2>
 	</a>
 
 	<a href="tel:4422646552">
-		<img src="phone.png" alt="github" />
+		<img src="phone.png" alt="github" width="70px" />
 		<h2>Phone</h2>
 	</a>
 
 	<a href="mailto:contact@codingMustache.dev">
-		<img src="email.png" alt="github" />
+		<img src="email.png" alt="github" width="70px" />
 		<h2>Email</h2>
 	</a>
 
 	<a href="https://www.linkedin.com/in/codingmustache/">
-		<img src="linkedin.png" alt="github" />
+		<img src="linkedin.png" alt="github" width="70px" />
 		<h2>LinkedIn</h2>
 	</a>
 </div>
