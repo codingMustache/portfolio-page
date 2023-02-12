@@ -71,7 +71,7 @@
 			var(--_g);
 		-webkit-mask: linear-gradient(#000 0 0) no-repeat 50% calc(1px - var(--_o)) /
 				calc(100% / var(--f) - 2 * var(--b) - 2px) 50%,
-			radial-gradient(circle closest-side, #000 99%, #0000) var(--_g);
+			radial-gradient(circle closest-side, #000 99%, #00000000) var(--_g);
 		transform: scale(var(--f));
 		transition: 0.5s;
 	}
