@@ -31,7 +31,8 @@
 		justify-content: center;
 		max-width: 400px;
 		box-shadow: inset 0 0 10px 3px rgb(255 255 255);
-		border-radius: 10px;
+		border-radius: 5px;
+		padding: 20px;
 	}
 	a {
 		cursor: pointer;
@@ -40,13 +41,13 @@
 		flex-direction: column;
 		align-items: center;
 		max-width: 100px;
-		margin: 20px 10px;
+		margin: 10px 10px;
 		text-decoration: none;
 		color: rgb(255, 255, 255);
 		text-shadow: 2px 1px black;
 		font-family: Julius, cursive;
 		font-size: x-large;
-		border-radius: 10px;
+		border-radius: 5px;
 		background-color: #494949;
 		box-shadow: 3px -3px 5px black, inset 3px -3px 5px white;
 	}

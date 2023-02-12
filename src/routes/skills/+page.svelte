@@ -35,6 +35,7 @@
 		</ul>
 	</div>
 {/each}
+<div class="footer" />
 
 <style>
 	.card {
@@ -71,10 +72,13 @@
 		box-shadow: 0px 3px 3px black;
 		box-shadow: 0px -1px 3px black, inset -0px -3px 5px rgba(255, 255, 255, 0.44);
 	}
-
+	.footer {
+		height: 100px;
+		width: 100%;
+	}
 	@media (max-width: 600px) {
 		.card {
-			max-width: 400px;
+			width: 90%;
 		}
 	}
 </style>

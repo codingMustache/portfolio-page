@@ -48,7 +48,7 @@
 		object-fit: cover;
 		width: 50%;
 		height: 100%;
-		border-radius: 10px;
+		border-radius: 0 0 150px 150px;
 	}
 
 	p {
