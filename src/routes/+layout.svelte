@@ -89,6 +89,7 @@
 		display: flex;
 		width: 70%;
 		align-items: center;
+		top: 0px;
 		height: 75px;
 		background: #6767676f;
 		border-top: none;
