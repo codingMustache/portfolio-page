@@ -18,8 +18,8 @@
 			'Chart.js',
 			'Passport'
 		],
-		Software: ['PGAdmin', 'Gimp', 'InkScape', 'Procreate'],
-		'Image Mgmt': ['HIEC/HIEF2Any', 'Cloudinary', 'Browser Image Compression', 'Swiper']
+		Software: ['Visual Studio Code','PGAdmin', 'Gimp', 'InkScape', 'Procreate'],
+		'Image Management': ['HIEC/HIEF2Any', 'Cloudinary', 'Browser Image Compression', 'Swiper']
 	};
 
 	//bable webpack  esLint Prettier github actions
