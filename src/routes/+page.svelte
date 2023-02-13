@@ -5,7 +5,7 @@
 		<p>
 			I was born and raised in Miami, FL. As a web developer, I have a passion for technology and a
 			love for all things web. My goal is to create websites that are not only functional but also
-			visually appealing. In my free time, I enjoy indulging in a good book, drawing and sketching,
+			visually appealing. In my free time, I enjoy indulging in a good book, drawing,
 			working on civic hacking projects and staying up-to-date on the latest developments in the
 			world of web technology.
 		</p>
